@@ -1,0 +1,8 @@
+
+@media screen and (min-width: 768px) {
+#nav_0_0 { background-color: rgba(51,51,51,0.08) }
+#nav_0_0-menu .ant-menu-item-active,#nav_0_0-menu.ant-menu-horizontal > .ant-menu-item-selected { border-color: #01f0e3; color: rgba(16,199,172,0.85) }
+#content_3_0-content { width: 75% }
+.footer1 #footer_1_0-block2 h2 { font-size: 24px }
+#footer_1_0-content { height: 60px }
+}
