@@ -25,10 +25,44 @@ class Header extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     delete props.isMode;
-    const navData = { menu1: 'Concept', menu2: 'Smiths', menu3: 'Client', menu4: 'Contact' };;
+    const navData = [
+      {
+        name: 'Concept',
+        link: '#content_2_0'
+      },
+      {
+        name: 'Smiths',
+        link: '#content_3_0'
+      },
+      {
+        name: 'Client',
+        link: '#content_6_0'
+      },
+      {
+        name: 'Contact',
+        link: '#footer_1_0'
+      }
+    ];
 
-    const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}>{navData[key]}</Item>));
+    // { 
+    //   menu1: 'Concept', 
+    //   menu2: 'Smiths', 
+    //   menu3: 'Client', 
+    //   menu4: 'Contact' 
+    // };
+
+    const navChildren = navData
+      .map((key, i) => (
+        <Item key={i}>
+          <div onClick={() => {
+
+            location.replace(key.link);
+      
+          }}>
+            {key.name}
+          </div>
+        </Item>
+      ));
     
       return (<TweenOne
       component="header"

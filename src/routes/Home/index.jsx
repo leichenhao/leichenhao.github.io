@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import enquire from 'enquire.js';
 import ScrollAnim from 'rc-scroll-anim';
+import Favicon from 'react-favicon';
+
 
 import Nav from './Nav';
 import Content0 from './Content0';
