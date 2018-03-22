@@ -1,5 +1,6 @@
 {
   "entry": "src/index.js",
+  "publicPath": "/dist",
   "disableCSSModules": true,
   "env": {
     "development": {
