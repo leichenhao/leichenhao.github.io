@@ -57,7 +57,7 @@ class Content extends React.Component {
               Concept
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              Offering a wide range of design and engineering services that ensure Design and Innovation achieve a breakthrough through creative and practical solutions.
+            Concept is the beginning of all innovation. We offering a wide range of design and engineering services that ensure Design and Innovation achieve a breakthrough through creative and practical solutions.
             <br/>
             <li>Concept Design </li>
             <li>Product Design </li>

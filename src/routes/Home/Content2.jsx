@@ -42,7 +42,7 @@ class Content extends React.Component {
               Smiths
             </h1>
              <p key="p" id={`${props.id}-content`}>
-              Smiths means " make the thing come true". 
+              Smiths makes concept into reality.
               With the passion of create, our experienced designers and 
               engineers team guarantee delightful designs made into a real product.
          

@@ -97,6 +97,7 @@ class Header extends React.Component {
             defaultSelectedKeys={['0']}
             mode="inline"
             theme="dark"
+           
           >
             {navChildren}
           </Menu>
