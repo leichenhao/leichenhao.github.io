@@ -10,7 +10,7 @@
     position: absolute;
     right: 0;
     span {
-      display: block;
+      display: inline-block;
       position: absolute;
       width: 55%;
       left: 10%;
@@ -53,10 +53,10 @@
 
 @media screen and (max-width: 767px) {
   .@{content1}-wrapper {
-    height: 400px;
+    height: 500px;
     .@{content1} {
       overflow: hidden;
-      width: 80%;
+      width: 90%;
       margin: auto;
       &-img, &-text {
         width: 100%;
@@ -65,14 +65,14 @@
         text-align: center;
       }
       &-img {
-        margin: 20px auto;
+        margin: 40px auto;
         height: 200px;
         span {
           right: 0;
           left: 0;
           margin: auto;
-          width: 360px;
-          height: 400px;
+          width: 180px;
+          height: 200px;
           line-height: 200px;
         }
       }

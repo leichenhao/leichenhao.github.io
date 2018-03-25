@@ -28,6 +28,7 @@ import CoffeAndT from '../../assets/clients-logo/coffeeAndToast_logo.jpg';
 
 
 import csLogo from '../../assets/CS-logo.png';
+import objectWithoutProperties from 'babel-runtime/helpers/objectWithoutProperties';
 
 class Content extends React.Component {
 
@@ -97,9 +98,9 @@ class Content extends React.Component {
     const childrenToRender = dataArray.map(this.getChildrenToRender);
     return (
       <div
-        style={{
-          height: 1128
-        }}
+      style={{
+        height: 1128
+      }}
         {...props}
         className="content-template-wrapper content4-wrapper"
       >
@@ -123,6 +124,7 @@ class Content extends React.Component {
             key="p"
             reverseDelay={200}
             id={`${props.id}-content`}
+            color ="white"
           >
             Trusted By 
           </TweenOne>

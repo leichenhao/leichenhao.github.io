@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
+import './less/nav.less';
 import cslogoS from '../../assets/cs-logo01.png';
 
 
 const Item = Menu.Item;
+
 
 class Header extends React.Component {
   constructor(props) {
@@ -23,8 +25,11 @@ class Header extends React.Component {
 
   render() {
     const props = { ...this.props };
+    const dataSource = props.dataSource;
     const isMode = props.isMode;
+    delete props.dataSource;
     delete props.isMode;
+    
     const navData = [
       {
         name: 'Concept',
@@ -54,15 +59,15 @@ class Header extends React.Component {
     const navChildren = navData
       .map((key, i) => (
         <Item key={i}>
-          <div onClick={() => {
+        <div onClick={() => {
 
-            location.replace(key.link);
-      
-          }}>
-            {key.name}
-          </div>
-        </Item>
-      ));
+          location.replace(key.link);
+    
+        }}>
+          {key.name}
+        </div>
+      </Item>
+    ));
     
       return (<TweenOne
       component="header"
@@ -94,10 +99,10 @@ class Header extends React.Component {
           className={`${this.props.className}-phone-nav-text`}
         >
           <Menu
-            defaultSelectedKeys={['0']}
-            mode="inline"
-            theme="dark"
-           
+              mode="inline"
+              defaultSelectedKeys={['0']}
+              theme = "dark"
+            
           >
             {navChildren}
           </Menu>
@@ -128,3 +133,4 @@ Header.defaultProps = {
 };
 
 export default Header;
+

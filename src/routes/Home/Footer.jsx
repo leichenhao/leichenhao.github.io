@@ -49,6 +49,9 @@ class Footer extends React.Component {
     const liChildrenToRender = dataSource.map(this.getLiChildren);
     return (<OverPack
       {...props}
+      style={{
+        height: 600
+      }}
       playScale={isMode ? 0.5 : 0.2}
     >
       <QueueAnim type="bottom" component="ul" key="ul" leaveReverse id={`${props.id}-ul`}>
