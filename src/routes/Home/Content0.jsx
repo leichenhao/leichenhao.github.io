@@ -8,7 +8,7 @@ import particlesJS from 'particles.js';
 
 
 
-import csLogo from '../../assets/CS-logo.png';
+import csLogo from '../../assets/cs-logo01-02.png';
 
 class Content extends React.Component {
   render() {

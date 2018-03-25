@@ -2,7 +2,7 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import cMotion from '../../assets/c_motion.gif';
+
 import galaxy_Motion from '../../assets/galaxy_motion.gif';
 import cube_Motion from '../../assets/cube_motion.gif';
 
